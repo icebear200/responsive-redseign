@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papaye Restaurant Resdesign</title>
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="style.css"/> 
+  </head>
+
+<body>
+
+  <div class="logoBar"><h1>PAPAYE RESTAURANT</h1>
+  </div>
+    <div class="navBarContainer">
+        <div id="aboutContainer">   <h2>ABOUT</h2> </div>
+        <div class="hours&LocContainer">   <h2>HOURS & LOCATIONS</h2>  </div>
+        <div class="orderOnlineContainer">   <h2>ORDER ONLINE </h2> </div>
+        <div class="menuContainer">   <h2>MENU</h2></div>
+</div>
+
+<div class="mainImage"> 
+    <img id="jollofSpread" alt="jollofSpread"src="assets/AdobeStock_516417736_Preview.jpeg" />
+</div>
+/* https://www.quora.com/How-do-I-change-an-image-every-5-seconds-on-HTML-and-CSS */
+<script>
+var mainImageChange = document.getElementById("jollofSpread");
+var mainImages = ["assets/AdobeStock_516417736_Preview.jpeg", "assets/AdobeStock_310608916_Preview.jpeg",  "assets/AdobeStock_572719269_Preview.jpeg"]
+var x = 0;
+
+function changeMainImage(){
+    mainImageChange.src = mainImages[x];
+    x = (x + 1) % mainImages.length;
+}
+setInterval(changeMainImage, 3000);
+</script>
+
+
+<div class ="aboutSectionTitle"> 
+   <h2> ABOUT </h2>
+</div> 
+
+<div class ="aboutSectionInfo"> 
+    <p> Papaye is making a special mark in the world of New York City cuisine bringing Ghanian  and African dishes to the heart of New York. While we are known for beef, lamb, and chicken dishes, we serve hearty vegan and vegetarian options as well. 
+
+        Akwaaba.</p>
+</div>
+
+<script> 
+function scrollToAboutSection(){
+    var aboutSection = document.getElementById("aboutContainer");
+    aboutSection.scrollIntoView();
+}
+</script>
+
+<div class="ghanaFlag"> <img id="ghanaFlag" src="assets/flag.png" /> </div>
+
+<div class="fufu"> <img id="fufu" src="assets/AdobeStock_389165125_Preview.jpeg" /></div>
+
+<div class="hoursAndLocTitle"> <h2>HOURS & LOCATIONS</h2></div>
+<div class="hoursAndLocContainer"> 
+    <div id="loc1"> <p> 
+        2500 Grand Concourse
+        Bronx, NY 10458
+        718-676-0771</p></div>
+    <div id = "loc2"> 
+        <p>
+            196 McClellan St
+            Bronx, NY 10456
+            718-681-3240</p>
+    </div>
+    <div id="hours&Loc" ></div>
+        <p> MON- FRI: 11am-11pm
+            SAT-SUN: 11am-11pm  
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
+
