@@ -1,32 +1,44 @@
+
+
 .logoBar{
     background-color: red;
-    height:125px;
+    height: 140px;
     width: 1510px;
     font-size: xx-large;
     color: white; 
     display: flex;
-    justify-content: center;
-
-
+    justify-content: center; 
 }
 
 .navBarContainer{
-    height: 100px;
+    height: 30px;
     width: 1510px;
     background-color: red;
     display: flex;
     justify-content: space-evenly;
     color: white; 
-
+    margin-top: 0px;
 }
 
-.aboutContainer, .menuContainer, .orderOnlineContainer {
+#aboutButton, #hoursandLocButton, #orderOnlineButton, #menuButton{
+    border: none;
+    background-color: red;
     color: white;
-    margin: 0px;
-
+    font-size: 35px;
 }
 
-.aboutSectionTitle, .hoursAndLocTitle{
+
+
+#aboutSectionInfo{
+    background-color: rgb(221, 218, 218);
+    border-color: red;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+    color: red;
+}
+
+#aboutSectionTitle, #hoursAndLocTitle{
     background-color: white;
     color: red;
     font-size: 25px;
@@ -43,18 +55,22 @@
 
 .ghanaFlag{
     display: flex;
-    height: 60px;
-    width: 20px;
+    height: 150px;
+    width: 100px;
     margin-left: 700px;
 
 }
 
-.mainImage{
-    width: 1500px;
+
+#mainImage{
+    width: 1200px;
     height: 600px;
     margin-top: 20px;
-    display: flex;
-    justify-content:space-around;
+    margin-left: 150px;
+    /* display: flex;
+    justify-content:space-around; */
+    background-image: url("assets/AdobeStock_516417736_Preview.jpeg");
+    /* background-image: url ("assets/AdobeStock_516417736_Preview.jpeg") ; */
 
 }
 .fufu{
@@ -67,13 +83,24 @@
   
 }
 
-.hoursAndLocContainer{
+.hoursContainer{
     background-color: white;
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
+    font-size: 20px;
     color: tomato;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
 
+}
+
+.locationsContainer {
+    background-color: white;
+    color: tomato;
+    margin-top: 7px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }

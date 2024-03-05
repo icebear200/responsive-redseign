@@ -8,73 +8,115 @@
   </head>
 
 <body>
-
-  <div class="logoBar"><h1>PAPAYE RESTAURANT</h1>
-  </div>
+    <!-- Div that for the NavBar at the top of the page -->
     <div class="navBarContainer">
-        <div id="aboutContainer">   <h2>ABOUT</h2> </div>
-        <div class="hours&LocContainer">   <h2>HOURS & LOCATIONS</h2>  </div>
-        <div class="orderOnlineContainer">   <h2>ORDER ONLINE </h2> </div>
-        <div class="menuContainer">   <h2>MENU</h2></div>
-</div>
+        <button aria-label="About" id="aboutButton"  onClick="scrollToAboutFunction()"> ABOUT</button>
+        <button aria-label="Hours and Locations" id="hoursandLocButton"  onClick="scrollToHoursandLocFunction()"> HOURS & LOCATIONS </button>
+        
+        <!-- on click, the order online button takes you to the restaurant's doordash page -->
+        <a href="https://www.doordash.com/business/papaye-restaurant-1062550/"> 
+            <button id="orderOnlineButton" aria-label="Order Online"onClick="scrollToOrderOnlineFunction()"> ORDER ONLINE </button> </a>
+      
+            <!-- on click, the Menu button shows you the restaurant Menu from its Doordash page -->
+       <a href="https://www.doordash.com/store/papaye-restaurant-(mcclellan-st)-the-bronx-23579988/">  
+        <button id="menuButton" aria-label="Menu" > MENU </button>  
+        </button> </a>  
+    </div>
 
-<div class="mainImage"> 
-    <img id="jollofSpread" alt="jollofSpread"src="assets/AdobeStock_516417736_Preview.jpeg" />
+        <!-- Script functionality for the button clicks. When you click About button, page scrolls to the About Section. 
+            When you click the Hours and Locations button page scrolls to Hours and Location section  */ -->
+    <script> 
+   function scrollToAboutFunction(){
+       var scrollToAbout = document.getElementById("aboutSectionTitle")
+       scrollToAbout.scrollIntoView();
+    }
+        </script>
+
+    <script>
+    function scrollToHoursandLocFunction(){
+        var scrollToHours = document.getElementById("hoursAndLocTitle")
+        scrollToHours.scrollIntoView();
+    } </script> 
+
+    <!-- restaurant title/logo bar -->
+    <div class="logoBar"><h1>PAPAYE RESTAURANT</h1>
+       <div id="est"> <p> est. 2003 </p> </div> 
+        </div>
+
+<div id="mainImage"> 
+
+    <!-- <img id="jollofSpread" aria-label="Jollof Rice and African food spread" alt="jollofSpread"src="assets/AdobeStock_516417736_Preview.jpeg" /> -->
+    <button id="changePhoto"> </button>
 </div>
-/* https://www.quora.com/How-do-I-change-an-image-every-5-seconds-on-HTML-and-CSS */
+<!-- /* https://www.quora.com/How-do-I-change-an-image-every-5-seconds-on-HTML-and-CSS */... -->
 <script>
-var mainImageChange = document.getElementById("jollofSpread");
-var mainImages = ["assets/AdobeStock_516417736_Preview.jpeg", "assets/AdobeStock_310608916_Preview.jpeg",  "assets/AdobeStock_572719269_Preview.jpeg"]
-var x = 0;
+
+var mainImageChange = document.getElementById("mainImage");
+var mainImages = ["url('assets/AdobeStock_516417736_Preview.jpeg')",  "url('assets/AdobeStock_310608916_Preview.jpeg')",  "url(assets/AdobeStock_572719269_Preview.jpeg)"]
+var currImage = 0;
+
+// function changeMainImage(){
+//     mainImageChange.src = mainImages[x];
+//     x = (x + 1) % mainImages.length;
+// }
 
 function changeMainImage(){
-    mainImageChange.src = mainImages[x];
-    x = (x + 1) % mainImages.length;
+    mainImageChange.style.backgroundImage = mainImages[currImage];
+    // mainImagesChange.src = mainImages[x];
+    currImage = (currImage+1) % mainImages.length;
 }
 setInterval(changeMainImage, 3000);
 </script>
 
 
-<div class ="aboutSectionTitle"> 
+<div id="aboutSectionTitle"> 
    <h2> ABOUT </h2>
 </div> 
 
-<div class ="aboutSectionInfo"> 
+<div id="aboutSectionInfo"> 
     <p> Papaye is making a special mark in the world of New York City cuisine bringing Ghanian  and African dishes to the heart of New York. While we are known for beef, lamb, and chicken dishes, we serve hearty vegan and vegetarian options as well. 
 
         Akwaaba.</p>
 </div>
 
-<script> 
+<!-- <script> 
 function scrollToAboutSection(){
     var aboutSection = document.getElementById("aboutContainer");
     aboutSection.scrollIntoView();
 }
-</script>
+</script> -->
 
-<div class="ghanaFlag"> <img id="ghanaFlag" src="assets/flag.png" /> </div>
+<div class="ghanaFlag"> <img id="ghanaFlag" src="assets/flag.png" alt="ghanaFlag"/> </div>
 
-<div class="fufu"> <img id="fufu" src="assets/AdobeStock_389165125_Preview.jpeg" /></div>
+<div class="fufu"> <img id="fufu" src="assets/AdobeStock_389165125_Preview.jpeg"  alt="fufu" /></div>
 
-<div class="hoursAndLocTitle"> <h2>HOURS & LOCATIONS</h2></div>
-<div class="hoursAndLocContainer"> 
-    <div id="loc1"> <p> 
-        2500 Grand Concourse
-        Bronx, NY 10458
-        718-676-0771</p></div>
-    <div id = "loc2"> 
-        <p>
-            196 McClellan St
-            Bronx, NY 10456
-            718-681-3240</p>
-    </div>
-    <div id="hours&Loc" ></div>
-        <p> MON- FRI: 11am-11pm
-            SAT-SUN: 11am-11pm  
+
+<div id="hoursAndLocTitle"> <h2>HOURS & LOCATIONS</h2></div>
+<div class="hoursContainer"> 
+    <div id="hours" ></div>
+        <p> MON- FRI: 11am-11pm </p>
+          <p>  SAT-SUN: 11am-11pm  
         </p>
     </div>
 </div>
 
+<div class ="locationsContainer"> 
+    <div id = "loc1"> 
+    <p>
+        196 McClellan St
+        Bronx, NY 10456
+        718-681-3240</p></p>
+    <p></p>
+    </div>
+    <div id = "loc2"> <p> 2500 Grand Concourse
+        Bronx, NY 10458
+        718-676-0771</p> 
+    </div>
+
 </body>
 </html>
 
+
+
+
+ 
