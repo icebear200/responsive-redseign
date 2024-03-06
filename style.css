@@ -204,7 +204,6 @@
 @media only screen and (max-width: 430px){
     #mainContent{
         width: 90%;
-        min-width: 430px;
 
     }
     #mainImage{
@@ -216,9 +215,14 @@
     }
 
     .logoBar{
-        font-size: large;
+        height: 100px;
+        width: auto;
         display: flex;
         flex-direction: column;
+    }
+    h1{
+        font-size: xx-large;
+        font-family: "Limelight";
     }
 
     .navBarContainer{
@@ -245,9 +249,8 @@
 
     #aboutInfo{
         width: auto;
-        height: auto;
         margin-left: 10px;
-        font-size: 0.42em;
+        margin-bottom: 10px;
     }
 
     .fufu{
@@ -255,15 +258,16 @@
         height: 500px;
         margin-left: 10px;
         margin-right: 20px;
-        margin-top: 280px;
-       
+
     }
 
     #aboutSectionInfoContainer{
         width: auto;
+        height: 300px;
         margin-left: 10px;
         margin-right: 20px;
-        margin-bottom: 100px;
+        font-size: 25px;
+        line-height: .7cm;
     }
 
     #hoursAndLocTitle{
@@ -284,12 +288,21 @@
 }
 
 
+
+
+
+
+
+
+
 /* media query for tablets */
-
-
 @media only screen and (max-width: 1024px){
     #mainContent{
         min-width: 430px;
+    }
+    #topRedDiv{
+        width: auto;
+        height: 2em;
     }
     #mainImage{
         width: auto;
@@ -298,39 +311,37 @@
         margin-right: 20px;
         margin-bottom: 40px;
     }
-/* 
+ 
     .logoBar{
-        font-size: large;
-        display: flex;
-        flex-direction: column;
+        font-size: xx-large;
+        font-family: "Limelight";  
     }
 
     .navBarContainer{
-        height: auto;
-        font-size: small;
+        font-size: .9em;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     #ghanaFlag{
-        margin-left: 65px;
-
+        display: flex;
+        align-items: column;
     }
 
     #aboutInfo{
         width: auto;
         height: auto;
         margin-left: 10px;
+        margin-right: 10px;
+        font-size: .7em;
+        line-height: 1cm;
     }
 
     .fufu{
         width: auto;
         height: 500px;
-        margin-left: 10px;
+        margin-left: 15px;
         margin-right: 20px;
-        margin-top: 280px;
-       
+        margin-top: 260px;
     }
 
     #aboutSectionInfoContainer{
@@ -339,6 +350,6 @@
         margin-right: 20px;
         margin-bottom: 50px;
 
-    } */
+    } 
     
 }
