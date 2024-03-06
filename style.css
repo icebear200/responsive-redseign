@@ -1,14 +1,16 @@
 
+
 #topRedDiv{
     background-color:rgb(243, 64, 64);
     /* background-color: orange; */
     height: 10px;
-    width: 1510px;
+    width: 100%;
 }
 
 .navBarContainer{
     height: 12px;
-    width: 1510px;
+    width: 100%;
+    /* width: 1510px; */
     background-color: rgb(243, 64, 64);
     /* background-color: orange; */
     display: flex;
@@ -20,7 +22,7 @@
     background-color: rgb(243, 64, 64);
     /* background-color: orange; */
     height: 117px;
-    width: 1510px;
+    width: 100%;
     font-size: xx-large;
     font-family: "Limelight";  
     color: white;
@@ -32,7 +34,7 @@
     background-color: rgb(243, 64, 64);
     /* background-color: orange; */
     height:24px;
-    width: 1510px;
+    width: 100%;
     color: white;
     display: flex;
     justify-content: center;
@@ -104,7 +106,7 @@
 }
 
  #hoursAndLocTitle{
-    width:1510px;
+    width:100%;
     height: 400px;
     color: red;
     font-size: 25px;
@@ -149,7 +151,7 @@
 }
 
 .hoursContainer{
-    width:1510px;
+    width:100%;
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
@@ -191,5 +193,58 @@
 #bottomBorder{
     height: 40px;
 
+}
+
+@media only screen and (max-width: 430px){
+    #mainImage{
+        width: auto;
+        height: 500px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .logoBar{
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navBarContainer{
+        height: auto;
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #ghanaFlag{
+        margin-left: 65px;
+
+    }
+
+    #aboutInfo{
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .fufu{
+        width: auto;
+        height: 500px;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-top: 280px;
+       
+    }
+
+    #aboutSectionInfoContainer{
+        width: auto;
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+
+    }
+    
 }
 
