@@ -66,7 +66,7 @@
 }
 
 
-#aboutSectionInfoContainer{
+.aboutSectionInfoContainer{
     width: 1000px;
     height: 400px;
     /* background-color: rgb(221, 218, 218); */
@@ -119,7 +119,7 @@
     margin-bottom: 30px;
 }
 
-#aboutSectionTitle{
+.aboutSectionTitle{
     color: red;
     font-size: 27px;
     font-family: "Limelight";
@@ -266,7 +266,7 @@
 
     }
 
-    #aboutSectionInfoContainer{
+    .aboutSectionInfoContainer{
         width: auto;
         height: 400px;
         margin-left: 10px;
@@ -349,7 +349,7 @@
         margin-top: 260px;
     }
 
-    #aboutSectionInfoContainer{
+    .aboutSectionInfoContainer{
         width: auto;
         margin-left: 10px;
         margin-right: 20px;
