@@ -89,6 +89,7 @@
 }
 
 #aboutInfo{
+    font-family: "Courier New";
     margin-top: 20px;
     width: 1000px;
     height: 300px;
@@ -170,6 +171,7 @@
     margin-right: 20px;
     font-size: 20px;
     font-family: 'Marcellus SC';
+    font-weight: bolder;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,7 +181,8 @@
 #viewLoc1Map, #viewLoc2Map{
     background-color: rgb(243, 64, 64);
     color: white;
-    font-size: 15px;
+    font-weight: bolder;
+    font-size: 19px;
     font-family: "Courier New";
     box-shadow: none;
     border-radius: 2cm;
