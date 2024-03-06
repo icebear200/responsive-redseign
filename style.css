@@ -4,8 +4,8 @@
 }
 
 #topRedDiv{
-    background-color:rgb(243, 64, 64);
-    /* background-color: orange; */
+    background-color: rgb(252, 239, 216);
+    /* background-color:rgb(243, 64, 64); */
     height: 10px;
     width: 100%;
 }
@@ -13,31 +13,31 @@
 .navBarContainer{
     height: 12px;
     width: 100%;
-    background-color: rgb(243, 64, 64);
-    /* background-color: orange; */
+    background-color: rgb(252, 239, 216);
+    /* background-color: rgb(243, 64, 64); */
     display: flex;
     justify-content: space-evenly;
-    color: white; 
+    color: red; 
 }
 
 .logoBar{
-    background-color: rgb(243, 64, 64);
-    /* background-color: orange; */
+    background-color: rgb(252, 239, 216);
+    /* background-color: rgb(243, 64, 64); */
     height: 117px;
     width: 100%;
     font-size: xx-large;
     font-family: "Limelight";  
-    color: white;
+    color: red;
     display: flex;
     justify-content: center; 
 }
 
 #est{
-    background-color: rgb(243, 64, 64);
-    /* background-color: orange; */
+    background-color: rgb(252, 239, 216);
+    /* background-color: rgb(243, 64, 64); */
     height:24px;
     width: 100%;
-    color: white;
+    color: red;
     display: flex;
     justify-content: center;
     font-size: 1em;
@@ -57,9 +57,9 @@
 
 #aboutButton, #hoursandLocButton, #orderOnlineButton, #menuButton{
     border: none;
-    background-color: rgb(243, 64, 64);
-    /* background-color: orange; */
-    color: white;
+    background-color: rgb(252, 239, 216);
+    /* background-color: rgb(243, 64, 64); */
+    color: red;
     font-size: 2em;
     font-family: "Courier New";
     box-shadow: none;
