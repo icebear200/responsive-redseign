@@ -203,7 +203,7 @@
 
 
 /* Media screen for Phone view */
-@media only screen and (max-width: 430px){
+@media  (max-width: 430px){
     #mainContent{
         width: 90%;
 
@@ -307,7 +307,7 @@
 
 
 /* media query for tablets */
-@media only screen and (max-width: 1024px){
+@media (max-width: 1024px){
     #mainContent{
         min-width: 430px;
     }
