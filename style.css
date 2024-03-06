@@ -46,12 +46,11 @@
 
 
 #mainImage{
-    width: 100%;
+    width: 62%;
     height: 600px;
     margin-left: 255px;
     margin-right: 255px;
     margin-bottom: 20px;
-    background-position: center;
 }
 
 
@@ -205,11 +204,12 @@
 
     }
     #mainImage{
-        width: auto;
+        width: 62%;
         height: 500px;
         margin-left: 10px;
         margin-right: 20px;
         margin-bottom: 40px;
+        background-position: center;
     }
 
     .logoBar{
