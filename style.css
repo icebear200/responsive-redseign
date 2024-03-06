@@ -255,10 +255,11 @@
     }
 
     .fufu{
-        width: auto;
+        width: 60%;
         height: 500px;
         margin-left: 10px;
         margin-right: 20px;
+        background-position: center;
 
     }
 
