@@ -3,7 +3,8 @@
 }
 
 #topRedDiv{
-    background-color:rgb(243, 64, 64);
+    /* background-color:rgb(243, 64, 64); */
+    background-color: orange;
     height: 10px;
     width: 1510px;
 }
@@ -11,49 +12,54 @@
 .navBarContainer{
     height: 12px;
     width: 1510px;
-    background-color: rgb(243, 64, 64);
+    /* background-color: rgb(243, 64, 64); */
+    background-color: orange;
     display: flex;
     justify-content: space-evenly;
     color: white; 
 }
 
 .logoBar{
-    background-color: rgb(243, 64, 64);
+    /* background-color: rgb(243, 64, 64); */
+    background-color: orange;
     height: 117px;
     width: 1510px;
     font-size: xx-large;
     font-family: "Limelight";  
-    color: white; 
+    color: red;
     display: flex;
     justify-content: center; 
 }
 
 #est{
-    background-color: rgb(243, 64, 64);
+    /* background-color: rgb(243, 64, 64); */
+    background-color: orange;
     height:24px;
     width: 1510px;
-    color: white;
+    color: red;
     display: flex;
     justify-content: center;
     font-size: 20px;
+    margin-bottom: 22px;
 }
 
 
 #mainImage{
-    width: 1350px;
+    width: 1000px;
     height: 600px;
-    margin-left: 105px;
-    margin-right: 105px;
+    margin-left: 255px;
+    margin-right: 255px;
     /* background-image: url("assets/AdobeStock_516417736_Preview.jpeg"); */
-    background-image: url("assets/rusticJollof.jpeg");
-    /* background-image: url("aassets/noLogo.jpeg"); */
-    margin-bottom: 40px;
+    background-image: url("assets/okraStew.jpeg");
+   
+    margin-bottom: 20px;
 }
 
 
 #aboutButton, #hoursandLocButton, #orderOnlineButton, #menuButton{
     border: none;
-    background-color: rgb(243, 64, 64);
+    /* background-color: rgb(243, 64, 64); */
+    background-color: orange;
     color: white;
     font-size: 30px;
     font-family: "Courier New";
@@ -61,58 +67,98 @@
 }
 
 
-
-#aboutSectionInfo{
-    background-image: url("assets/plantainsPhoto.jpeg");
-    width: 1450px;
-    height: 420px;
+#aboutSectionInfoContainer{
+    width: 1000px;
+    height: 200px;
     /* background-color: rgb(221, 218, 218); */
-    border-color: red;
-    margin-left: 40px;
+    margin-left: 255px;
     margin-right: 40px;
-    font-size: 30px;
-    color: red;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font: bold;
+    line-height: 0.8cm;
+    /* display: flex;
+    justify-content: center; */
+
 }
 
-#aboutSectionTitle, #hoursAndLocTitle{
-    background-color: white;
+#ghanaFlag{
+    background-image: url("assets/ghanaFlag.jpeg");
+    height: 170px;
+    width: 250px;
+    margin-left: 370px;
+}
+
+#aboutInfo{
+    margin-top: 20px;
+    width: 1000px;
+    height: 300px;
+    /* background-color: rgb(221, 218, 218); */
+    border-color: red;
+    font-size: 20px;
+    line-height: 0.8cm;
+    color: red;
+
+}
+
+#akwaaba{
+    color: red;
+
+}
+
+ #hoursAndLocTitle{
+    width:1510px;
+    height: 400px;
     color: red;
     font-size: 25px;
     font-family: "Limelight";
     height: 60px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-
-.ghanaFlag{
+#aboutSectionTitle{
+    color: red;
+    font-size: 27px;
+    font-family: "Limelight";
+    height: 80px;
     display: flex;
-    height: 150px;
-    width: 100px;
-    margin-left: 700px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
 
 }
 
-/* 
+
 .fufu{
+     background-image: url("assets/rusticJollof.jpeg");
+     margin-top: 90px;
+     width: 1000px;
+    height: 600px;
+    border-color: red;
+    margin-left: 255px;
+    margin-right: 40px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    color: red;
+} 
+
+.hoursAndLocContainer{
+    background-color: orange;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    width: 1450px;
-    height: 500px;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-image: url("assets/plantainsPhoto.jpeg");
-  
-} */
+    flex-direction: column;
+}
 
 .hoursContainer{
-    background-color: white;
+    width:1510px;
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 40px;
     font-size: 20px;
-    color: tomato;
+    color: red;
+    font-family: "Courier New";
     display: flex;
     justify-content: center;
     
@@ -120,11 +166,33 @@
 }
 
 .locationsContainer {
-    background-color: white;
-    color: tomato;
+    color: red;
     margin-top: 7px;
+    margin-right: 20px;
     font-size: 20px;
+    font-family: 'Marcellus SC';
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
+}
+
+#viewLoc1Map, #viewLoc2Map{
+    background-color: rgb(243, 64, 64);
+    color: white;
+    font-size: 15px;
+    font-family: "Courier New";
+}
+#hours{
+    margin-bottom: 20px;
+}
+
+#loc2{
+    margin-top: 30px;
+}
+
+#bottomBorder{
+    height: 40px;
+
 }
 

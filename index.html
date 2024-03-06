@@ -18,7 +18,7 @@ href="https://fonts.googleapis.com/css?family=JacquesFrancois"/>
 href="https://fonts.googleapis.com/css?family=Alegreya Sans SC", href="https://fonts.googleapis.com/css?family=Courier New", href="https://fonts.googleapis.com/css?family=Ginger_Light"/>
 </head>
 
-<body >
+<body style="background-color: rgb(241, 234, 234);">
     <div id="topRedDiv"> </div>
     <!-- Div that for the NavBar at the top of the page -->
     <div class="navBarContainer">
@@ -64,7 +64,7 @@ href="https://fonts.googleapis.com/css?family=Alegreya Sans SC", href="https://f
 
 <script>
 var mainImageChange = document.getElementById("mainImage");
-var mainImages = ["url('assets/AdobeStock_516417736_Preview.jpeg')",  "url(assets/AdobeStock_572719269_Preview.jpeg)", "url(assets/resizedPlan.jpeg)", "url(assets/jollofBackground.jpeg)", "url(assets/MGTGhana-780x520.jpeg)"]
+var mainImages = ["url('assets/AdobeStock_516417736_Preview.jpeg')",  "url(assets/AdobeStock_572719269_Preview.jpeg)", "url(assets/okraStew.jpeg)" ]
 var currImage = 0;
 
 
@@ -80,10 +80,14 @@ setInterval(changeMainImage, 5000);
    <h2> ABOUT </h2>
 </div> 
 
-<div id="aboutSectionInfo"> 
-    <p> Papaye is making a special mark in the world of New York City cuisine bringing Ghanian  and African dishes to the heart of New York. While we are known for beef, lamb, and chicken dishes, we serve hearty vegan and vegetarian options as well. 
 
-        Akwaaba.</p>
+
+<div id="aboutSectionInfoContainer"> 
+    <div id="ghanaFlag"></div> 
+    <div id="aboutInfo">Papaye is making a special mark in the world of New York City cuisine bringing traditional Ghanian and African dishes to the heart of New York. You will be welcomed to a warm aromatic atmosphere of sight and smells of authentic African foods. While we are known for beef, lamb, and chicken dishes, we serve hearty vegan and vegetarian options as well.                  
+        Akwaaba.
+        </div>
+      
 </div>
 
 <!-- <script> 
@@ -93,32 +97,29 @@ function scrollToAboutSection(){
 }
 </script> -->
 
-<div class="ghanaFlag"> <img id="ghanaFlag" src="assets/flag.png" alt="ghanaFlag"/> </div>
 
 <div class="fufu"></div>
 
-
+<div class="hoursAndLocContainer"> 
 <div id="hoursAndLocTitle"> <h2>HOURS & LOCATIONS</h2></div>
-<div class="hoursContainer"> 
-    <div id="hours" ></div>
-        <p> MON- FRI: 11am-11pm </p>
-          <p>  SAT-SUN: 11am-11pm  
-        </p>
-    </div>
-</div>
-
 <div class ="locationsContainer"> 
+    <div id="hours" > DAILY 11am-11pm</div>
     <div id = "loc1"> 
-    <p>
         196 McClellan St
         Bronx, NY 10456
-        718-681-3240</p></p>
-    <p></p>
     </div>
-    <div id = "loc2"> <p> 2500 Grand Concourse
-        Bronx, NY 10458
-        718-676-0771</p> 
+       <div> 718-681-3240
     </div>
+    <a href= "https://maps.app.goo.gl/rA1QGnoA4urRBanX6">  <button id = "viewLoc1Map"> VIEW ON MAP</button> </a>
+
+    <div id = "loc2"> 2500 Grand Concourse
+        Bronx, NY 10458   </div>
+       <div> 718-676-0771
+    </div>
+    <a href="https://maps.app.goo.gl/MhqrHvyTTuEbkM3B6"> <button id=viewLoc2Map>VIEW ON MAP</button></a>
+</div>
+    <div id="bottomBorder"> </div>
+</div>
 
 </body>
 </html>
