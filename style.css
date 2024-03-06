@@ -3,7 +3,7 @@
     padding: 0; 
 }
 
-#topRedDiv{
+.topDiv{
     background-color: rgb(252, 239, 216);
     /* background-color:rgb(243, 64, 64); */
     height: 10px;
@@ -223,6 +223,7 @@
         display: flex;
         flex-direction: column;
     }
+
     h1{
         font-size: xx-large;
         font-family: "Limelight";
@@ -238,9 +239,8 @@
 
     #aboutButton, #hoursandLocButton, #orderOnlineButton, #menuButton{
         border: none;
-        background-color: rgb(243, 64, 64);
         /* background-color: orange; */
-        color: white;
+        color: red;
         font-size: 1.5em;
         font-family: "Courier New";
     }
@@ -268,7 +268,7 @@
 
     #aboutSectionInfoContainer{
         width: auto;
-        height: 300px;
+        height: 400px;
         margin-left: 10px;
         margin-right: 20px;
         font-size: 25px;
@@ -305,7 +305,7 @@
     #mainContent{
         min-width: 430px;
     }
-    #topRedDiv{
+    .topDiv{
         width: auto;
         height: 2em;
     }
