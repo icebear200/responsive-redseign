@@ -5,9 +5,21 @@
     <title>Papaye Restaurant Resdesign</title>
     <!-- import CSS styles -->
     <link rel="stylesheet" href="style.css"/> 
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Limelight"/>
   </head>
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=MarcellusSC"/>
+</head>
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=JacquesFrancois"/>
+</head>
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Alegreya Sans SC", href="https://fonts.googleapis.com/css?family=Courier New", href="https://fonts.googleapis.com/css?family=Ginger_Light"/>
+</head>
 
-<body>
+<body >
+    <div id="topRedDiv"> </div>
     <!-- Div that for the NavBar at the top of the page -->
     <div class="navBarContainer">
         <button aria-label="About" id="aboutButton"  onClick="scrollToAboutFunction()"> ABOUT</button>
@@ -39,33 +51,28 @@
     } </script> 
 
     <!-- restaurant title/logo bar -->
+
     <div class="logoBar"><h1>PAPAYE RESTAURANT</h1>
-       <div id="est"> <p> est. 2003 </p> </div> 
         </div>
+    <div id="est"> est. 2003  </div> 
 
 <div id="mainImage"> 
-
-    <!-- <img id="jollofSpread" aria-label="Jollof Rice and African food spread" alt="jollofSpread"src="assets/AdobeStock_516417736_Preview.jpeg" /> -->
     <button id="changePhoto"> </button>
 </div>
 <!-- /* https://www.quora.com/How-do-I-change-an-image-every-5-seconds-on-HTML-and-CSS */... -->
-<script>
 
+
+<script>
 var mainImageChange = document.getElementById("mainImage");
-var mainImages = ["url('assets/AdobeStock_516417736_Preview.jpeg')",  "url('assets/AdobeStock_310608916_Preview.jpeg')",  "url(assets/AdobeStock_572719269_Preview.jpeg)"]
+var mainImages = ["url('assets/AdobeStock_516417736_Preview.jpeg')",  "url(assets/AdobeStock_572719269_Preview.jpeg)", "url(assets/resizedPlan.jpeg)", "url(assets/jollofBackground.jpeg)", "url(assets/MGTGhana-780x520.jpeg)"]
 var currImage = 0;
 
-// function changeMainImage(){
-//     mainImageChange.src = mainImages[x];
-//     x = (x + 1) % mainImages.length;
-// }
 
 function changeMainImage(){
     mainImageChange.style.backgroundImage = mainImages[currImage];
-    // mainImagesChange.src = mainImages[x];
     currImage = (currImage+1) % mainImages.length;
 }
-setInterval(changeMainImage, 3000);
+setInterval(changeMainImage, 5000);
 </script>
 
 
@@ -88,7 +95,7 @@ function scrollToAboutSection(){
 
 <div class="ghanaFlag"> <img id="ghanaFlag" src="assets/flag.png" alt="ghanaFlag"/> </div>
 
-<div class="fufu"> <img id="fufu" src="assets/AdobeStock_389165125_Preview.jpeg"  alt="fufu" /></div>
+<div class="fufu"></div>
 
 
 <div id="hoursAndLocTitle"> <h2>HOURS & LOCATIONS</h2></div>
@@ -115,8 +122,6 @@ function scrollToAboutSection(){
 
 </body>
 </html>
-
-
 
 
  

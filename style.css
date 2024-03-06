@@ -1,36 +1,72 @@
+#body{
+    background-color: blue;
+}
 
+#topRedDiv{
+    background-color:rgb(243, 64, 64);
+    height: 10px;
+    width: 1510px;
+}
+
+.navBarContainer{
+    height: 12px;
+    width: 1510px;
+    background-color: rgb(243, 64, 64);
+    display: flex;
+    justify-content: space-evenly;
+    color: white; 
+}
 
 .logoBar{
-    background-color: red;
-    height: 140px;
+    background-color: rgb(243, 64, 64);
+    height: 117px;
     width: 1510px;
     font-size: xx-large;
+    font-family: "Limelight";  
     color: white; 
     display: flex;
     justify-content: center; 
 }
 
-.navBarContainer{
-    height: 30px;
+#est{
+    background-color: rgb(243, 64, 64);
+    height:24px;
     width: 1510px;
-    background-color: red;
+    color: white;
     display: flex;
-    justify-content: space-evenly;
-    color: white; 
-    margin-top: 0px;
+    justify-content: center;
+    font-size: 20px;
 }
+
+
+#mainImage{
+    width: 1350px;
+    height: 600px;
+    margin-left: 105px;
+    margin-right: 105px;
+    /* background-image: url("assets/AdobeStock_516417736_Preview.jpeg"); */
+    background-image: url("assets/rusticJollof.jpeg");
+    /* background-image: url("aassets/noLogo.jpeg"); */
+    margin-bottom: 40px;
+}
+
 
 #aboutButton, #hoursandLocButton, #orderOnlineButton, #menuButton{
     border: none;
-    background-color: red;
+    background-color: rgb(243, 64, 64);
     color: white;
-    font-size: 35px;
+    font-size: 30px;
+    font-family: "Courier New";
+    box-shadow: none;
 }
 
 
 
 #aboutSectionInfo{
-    background-color: rgb(221, 218, 218);
+    background-image: url("assets/plantainsPhoto.jpeg");
+    width: 1450px;
+    height: 420px;
+    /* background-color: rgb(221, 218, 218); */
     border-color: red;
     margin-left: 40px;
     margin-right: 40px;
@@ -42,16 +78,12 @@
     background-color: white;
     color: red;
     font-size: 25px;
+    font-family: "Limelight";
     height: 60px;
     display: flex;
     justify-content: center;
 }
-.aboutSectionInfo{
-    color: tomato;
-    margin-left: 60px;
-    margin-right: 70px;
-    line-height: 1cm;
-}
+
 
 .ghanaFlag{
     display: flex;
@@ -61,27 +93,18 @@
 
 }
 
-
-#mainImage{
-    width: 1200px;
-    height: 600px;
-    margin-top: 20px;
-    margin-left: 150px;
-    /* display: flex;
-    justify-content:space-around; */
-    background-image: url("assets/AdobeStock_516417736_Preview.jpeg");
-    /* background-image: url ("assets/AdobeStock_516417736_Preview.jpeg") ; */
-
-}
+/* 
 .fufu{
     display: flex;
     justify-content: center;
-    margin-left: 500px;
     margin-top: 20px;
-    width: 450px;
-    height: 450px;
+    width: 1450px;
+    height: 500px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-image: url("assets/plantainsPhoto.jpeg");
   
-}
+} */
 
 .hoursContainer{
     background-color: white;
@@ -104,3 +127,4 @@
     display: flex;
     justify-content: space-evenly;
 }
+
