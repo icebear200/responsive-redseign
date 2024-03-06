@@ -145,7 +145,7 @@
 } 
 
 .hoursAndLocContainer{
-    background-color: orange;
+    background-color: rgb(247, 215, 157);
     display: flex;
     flex-direction: column;
 }
@@ -182,6 +182,7 @@
     font-size: 15px;
     font-family: "Courier New";
     box-shadow: none;
+    border-radius: 2cm;
 }
 #hours{
     margin-bottom: 20px;
