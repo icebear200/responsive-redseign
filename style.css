@@ -287,6 +287,12 @@
         box-shadow: none;
         border-radius: 5%;
     }
+    .locationsContainer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 20px;
+    }
 
   
     
