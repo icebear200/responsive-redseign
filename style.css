@@ -46,6 +46,7 @@
 
 
 #mainImage{
+    background-image: url("assets/okraStew.jpeg");
     width: 62%;
     height: 600px;
     margin-left: 255px;
