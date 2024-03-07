@@ -263,23 +263,27 @@
     }
 
     #fufu{
-        width:80%;
-        height: 40%;
+        width:100%;
+        height: 50%;
         margin-left: 0px;
-
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        
+        background-position: center;
+      
     }
 
 
 
 
-     .fufuContainer{
+     /* .fufuContainer{
         display: flex;
         flex-direction: column;
         align-content: space-between; 
         background-position: center;
-        margin-bottom: 20px;
-
-    }  
+      
+    }   */
 
     .aboutSectionInfoContainer{
         width: auto;
