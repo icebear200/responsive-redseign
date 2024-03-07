@@ -131,19 +131,20 @@
 
 }
 
-
+/* 
 .fufu{
-     background-image: url("assets/rusticJollof.jpeg");
-     margin-top: 90px;
-     width: 1000px;
+    margin-top: 90px;
+    width: 1000px;
     height: 600px;
     border-color: red;
     margin-left: 255px;
     margin-right: 40px;
-    margin-bottom: 70px;
-    font-size: 30px;
-    color: red;
-} 
+}  */
+
+.fufuContainer{
+    display: flex;
+    flex-direction: row;
+}
 
 .hoursAndLocContainer{
     background-color: rgb(252, 239, 216);
@@ -197,6 +198,10 @@
 
 #bottomBorder{
     height: 40px;
+}
+
+.fufuContainer{
+    margin-left: 80px;
 }
 
 
@@ -257,14 +262,24 @@
         line-height: 1cm;
     }
 
-    .fufu{
-        width: 60%;
-        height: 500px;
-        margin-left: 10px;
-        margin-right: 20px;
-        background-position: center;
+    #fufu{
+        width:80%;
+        height: 40%;
+        margin-left: 0px;
 
     }
+
+
+
+
+     .fufuContainer{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between; 
+        background-position: center;
+        margin-bottom: 20px;
+
+    }  
 
     .aboutSectionInfoContainer{
         width: auto;
@@ -347,12 +362,22 @@
         line-height: 1.9em;
     }
 
-    .fufu{
-        width: auto;
-        height: 500px;
-        margin-left: 15px;
-        margin-right: 20px;
+    #fufu{
+       
+        height: 600px;
         margin-top: 260px;
+    
+    }
+
+    #fufuSoup{
+        margin-top: 230px;
+        margin-left: 100px;
+    }
+
+    .fufuContainer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     }
 
     .aboutSectionInfoContainer{
