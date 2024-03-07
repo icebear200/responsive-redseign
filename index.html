@@ -51,7 +51,7 @@
             <h1>PAPAYE RESTAURANT</h1>
         </div>
         <div id="est"> est. 2003 </div>
-        <div id="mainImage" alt="jollofRice,Chicken,GhanianFoodSpread">
+        <div id="mainImage" label="jollofRice,Chicken,GhanianFoodSpread">
         </div>
 
         <!-- Citing quora article I read to learn how to update main images /* https://www.quora.com/How-do-I-change-an-image-every-5-seconds-on-HTML-and-CSS */... -->
@@ -59,6 +59,7 @@
             var mainImageChange = document.getElementById("mainImage");
             var mainImages = [ "url('assets/jollofRice,Chicken,GhanianFoodSpread.jpeg')" ,  "url(assets/AdobeStock_572719269_Preview.jpeg)", "url(assets/okraStew.jpeg)" ]
             var currImage = 0;
+        
 
             function changeMainImage() {
                 mainImageChange.style.backgroundImage = mainImages[currImage];
@@ -66,6 +67,9 @@
             }
             setInterval(changeMainImage, 5000);
         </script>
+
+        <label for="mainImage"> currImage</label><input type="assets/jollofRice,Chicken,GhanianFoodSpread.jpeg">
+
 
 
         <div id="aboutSectionTitle">
