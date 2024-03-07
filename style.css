@@ -5,7 +5,6 @@
 
 .topDiv{
     background-color: rgb(252, 239, 216);
-    /* background-color:rgb(243, 64, 64); */
     height: 10px;
     width: 100%;
 }
@@ -14,7 +13,6 @@
     height: 12px;
     width: 100%;
     background-color: rgb(252, 239, 216);
-    /* background-color: rgb(243, 64, 64); */
     display: flex;
     justify-content: space-evenly;
     color: red; 
@@ -22,7 +20,6 @@
 
 .logoBar{
     background-color: rgb(252, 239, 216);
-    /* background-color: rgb(243, 64, 64); */
     height: 117px;
     width: 100%;
     font-size: xx-large;
@@ -34,7 +31,6 @@
 
 #est{
     background-color: rgb(252, 239, 216);
-    /* background-color: rgb(243, 64, 64); */
     height:24px;
     width: 100%;
     color: red;
@@ -44,7 +40,7 @@
     margin-bottom: 22px;
 }
 
-
+/* Styles the main updating image component of the site. I set the background photo here and in the html it updates */
 #mainImage{
     background-image: url("assets/okraStew.jpeg");
     width: 62%;
@@ -54,11 +50,9 @@
     margin-bottom: 20px;
 }
 
-
 #aboutButton, #hoursandLocButton, #orderOnlineButton, #menuButton{
     border: none;
     background-color: rgb(252, 239, 216);
-    /* background-color: rgb(243, 64, 64); */
     color: red;
     font-size: 2em;
     font-family: "Courier New";
@@ -69,16 +63,12 @@
 .aboutSectionInfoContainer{
     width: 1000px;
     height: 400px;
-    /* background-color: rgb(221, 218, 218); */
     margin-left: 255px;
     margin-right: 40px;
     margin-bottom: 40px;
     font-size: 2.5em;
     font: bold;
     line-height: 0.8cm;
-    /* display: flex;
-    justify-content: center; */
-
 }
 
 #ghanaFlag{
@@ -93,7 +83,6 @@
     margin-top: 20px;
     width: 1000px;
     height: 300px;
-    /* background-color: rgb(221, 218, 218); */
     border-color: red;
     font-size: .6em;
     line-height: 0.9cm;
@@ -103,7 +92,6 @@
 
 #akwaaba{
     color: red;
-
 }
 
  #hoursAndLocTitle{
@@ -131,16 +119,6 @@
 
 }
 
-/* 
-.fufu{
-    margin-top: 90px;
-    width: 1000px;
-    height: 600px;
-    border-color: red;
-    margin-left: 255px;
-    margin-right: 40px;
-}  */
-
 .fufuContainer{
     display: flex;
     flex-direction: row;
@@ -162,8 +140,6 @@
     font-family: "Courier New";
     display: flex;
     justify-content: center;
-    
-
 }
 
 .locationsContainer {
@@ -205,13 +181,10 @@
 }
 
 
-
-
 /* Media screen for Phone view */
 @media  (max-width: 430px){
     #mainContent{
         width: 90%;
-
     }
     #mainImage{
         width: 62%;
@@ -244,7 +217,6 @@
 
     #aboutButton, #hoursandLocButton, #orderOnlineButton, #menuButton{
         border: none;
-        /* background-color: orange; */
         color: red;
         font-size: 1.5em;
         font-family: "Courier New";
@@ -269,21 +241,8 @@
         margin-right: 40px;
         display: flex;
         flex-direction: column;
-        
         background-position: center;
-      
     }
-
-
-
-
-     /* .fufuContainer{
-        display: flex;
-        flex-direction: column;
-        align-content: space-between; 
-        background-position: center;
-      
-    }   */
 
     .aboutSectionInfoContainer{
         width: auto;
@@ -316,14 +275,6 @@
   
     
 }
-
-
-
-
-
-
-
-
 
 /* media query for tablets */
 @media (max-width: 1024px){
@@ -370,12 +321,6 @@
        
         height: 600px;
         margin-top: 260px;
-    
-    }
-
-    #fufuSoup{
-        margin-top: 230px;
-        margin-left: 100px;
     }
 
     .fufuContainer{
